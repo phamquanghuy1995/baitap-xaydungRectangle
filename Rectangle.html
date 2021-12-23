@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="mycanvas" width="500" height="500" style="border: 1px solid #fa0707;"></canvas>
+<script src="rectangle.js"></script>
+<script>
+    function classRectangle() {
+        let ctx = document.getElementById("mycanvas").getContext("2d");
+        let x = Math.random() * 500;
+        let y = Math.random() * 500;
+        ctx.strokeRect(x, y, rectangle.width, rectangle.length);
+    }
+
+    let Rectangle = new rectangle(20, 50)
+    width = Rectangle.getwidth();
+    length = Rectangle.getlength();
+    Rectangle.setwidth(40);
+    Rectangle.setlength(100);
+    width = Rectangle.getwidth();
+    length = Rectangle.getlength();
+    console.log(Rectangle.getArea());
+    console.log(Rectangle.getperimeter());
+
+</script>
+</body>
+</html>
